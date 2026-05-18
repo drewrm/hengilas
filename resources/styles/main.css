@@ -1,0 +1,36 @@
+window {
+    font-size: 24px;
+}
+
+.title {
+  font-size: 64px;
+}
+
+.time {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+entry {
+  min-width: 600px;
+  padding: 12px;
+  margin: 6px;
+  font-family: "FiraCode Nerd Font", "JetBrainsMono Nerd Font", monospace;
+  letter-spacing: 1px;
+}
+
+.lock-screen-overlay {
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.error {
+  color: #ff4444;
+  font-size: 18px;
+}
+
+button.suggested-action {
+  min-width: 600px;
+  padding: 12px;
+  margin-top: 12px;
+}

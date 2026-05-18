@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.2"/>
+    <object class="GtkApplicationWindow" id="lock_window">
+        <child>
+            <object class="GtkOverlay">
+                <child>
+                    <object class="GtkPicture" id="background_picture">
+                        <property name="keep-aspect-ratio">true</property>
+                    </object>
+                </child>
+                <child type="overlay">
+                    <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="halign">fill</property>
+                        <property name="valign">center</property>
+                        <property name="hexpand">true</property>
+                        <property name="spacing">12</property>
+                        <style>
+                            <class name="lock-screen-overlay"/>
+                        </style>
+
+                        <child>
+                            <object class="GtkBox">
+                                <property name="orientation">vertical</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="spacing">4</property>
+
+                                <child>
+                                    <object class="GtkLabel" id="title_label">
+                                        <property name="label">--</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <style>
+                                            <class name="title"/>
+                                        </style>
+                                    </object>
+                                </child>
+
+                                <child>
+                                    <object class="GtkLabel" id="time_label">
+                                        <property name="label">--</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <style>
+                                            <class name="time"/>
+                                        </style>
+                                    </object>
+                                </child>
+
+                            </object>
+                        </child>
+
+                        <!-- Error message -->
+                        <child>
+                            <object class="GtkLabel" id="error_label">
+                                <property name="label" />
+                                <property name="halign">center</property>
+                                <property name="height-request">24</property>
+                                <style>
+                                    <class name="error"/>
+                                </style>
+                            </object>
+                        </child>
+
+                        <child>
+                            <object class="GtkBox">
+                                <property name="orientation">vertical</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                                <property name="spacing">12</property>
+
+                                <!-- Username -->
+                                <child>
+                                    <object class="GtkEntry" id="username_entry">
+                                        <property name="placeholder-text">  Username</property>
+                                        <property name="editable">false</property>
+                                    </object>
+                                </child>
+
+                                <!-- Password -->
+                                <child>
+                                    <object class="GtkEntry" id="password_entry">
+                                        <property name="placeholder-text">  Password</property>
+                                        <property name="visibility">false</property>
+                                        <property name="input-purpose">password</property>
+                                    </object>
+                                </child>
+
+                                <!-- Unlock Button -->
+                                <child>
+                                    <object class="GtkButton" id="unlock_button">
+                                        <property name="label">Unlock</property>
+                                        <style>
+                                            <class name="suggested-action"/>
+                                        </style>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
+
