@@ -1,0 +1,27 @@
+font_family = "Sans"
+font_size = 14
+
+[header]
+font_family = "Sans"
+font_size = 64
+text = "Unlock Computer"
+
+[subtitle]
+font_family = "Sans"
+font_size = 32
+text = "Enter your password to unlock"
+
+[focus]
+color = "#4a90d9"
+width = 2
+
+[button]
+background = "#4a90d9"
+foreground = "#ffffff"
+
+[overlay]
+color = "#000000"
+opacity = 0.5
+
+[background]
+image = "/usr/share/backgrounds/default.png"
